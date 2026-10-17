@@ -334,6 +334,8 @@ h3, .project-title h3, .teaching-item h3, .lead-row h3, .detail-block h3, .compo
 /* Homepage portrait: frame takes the photo's own shape so nothing is cropped. */
 .portrait-frame{height:auto!important;aspect-ratio:auto}
 .portrait-frame img{height:auto!important;object-fit:contain!important;display:block}
+/* About portrait: never crop, whatever the photo's shape. */
+.about-portrait img{max-height:none!important;height:auto!important;object-fit:contain!important}
 </style>
 <style id="theme">:root{--bg:#F4F1E8;--ink:#1E2B24;--text-secondary:#46524A;--accent:#2E6B4E;--panel:#FFFDF7;--panel-border:#D8D3C4;}</style>
 </head>

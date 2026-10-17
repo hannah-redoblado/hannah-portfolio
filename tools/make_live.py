@@ -26,6 +26,8 @@ live_css = """
 /* Homepage portrait: frame takes the photo's own shape so nothing is cropped. */
 .portrait-frame{height:auto!important;aspect-ratio:auto}
 .portrait-frame img{height:auto!important;object-fit:contain!important;display:block}
+/* About portrait: never crop, whatever the photo's shape. */
+.about-portrait img{max-height:none!important;height:auto!important;object-fit:contain!important}
 </style>
 """
 if theme:
