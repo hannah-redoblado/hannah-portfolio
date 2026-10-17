@@ -23,8 +23,9 @@ live_css = """
 #edit-toggle,#project-form,#text-edit-toggle,#export,#story-open,#profile-open,
 #portrait-open,.portrait-edit,#contact-form,#text-edit-bar,#text-editor,
 .portrait-empty,#personal-statement.pending,.footer-bottom span:last-child{display:none!important}
-/* Homepage portrait: tall 3:4 frame so the full-length photo shows most of the body. */
-.portrait-frame{height:auto!important;aspect-ratio:3/4}
+/* Homepage portrait: frame takes the photo's own shape so nothing is cropped. */
+.portrait-frame{height:auto!important;aspect-ratio:auto}
+.portrait-frame img{height:auto!important;object-fit:contain!important;display:block}
 </style>
 """
 if theme:
